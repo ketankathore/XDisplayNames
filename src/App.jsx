@@ -13,7 +13,7 @@ function App() {
   return (
     <main className="app-shell">
       <section className="card">
-        <h1>Enter Your Name</h1>
+        <h1>Full Name Display</h1>
         <p className="subtitle">Fill in both fields and submit to see your full name.</p>
 
         <form onSubmit={handleSubmit} className="name-form">
@@ -44,8 +44,7 @@ function App() {
 
         {fullName && (
           <div className="result-box" aria-live="polite">
-            <p>Full name:</p>
-            <strong>{fullName}</strong>
+            <p>Full Name: {fullName}</p>
           </div>
         )}
       </section>
